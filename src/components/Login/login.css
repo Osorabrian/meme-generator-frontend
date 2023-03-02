@@ -1,3 +1,9 @@
 #log_in{
-    width: 30%;
+    text-align: left;
+    width: 29%;
+    background-color: grey;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 69.5%;
 }
