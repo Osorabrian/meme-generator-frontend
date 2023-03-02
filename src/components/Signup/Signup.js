@@ -3,16 +3,22 @@ import './signup.css'
 
 export default function SignUp() {
     return (
-    <form id="sign_up">
+    <form id="sign_up" className="rounded">
 
     <h1 style={{textAlign: "center"}} className="text-primary">Sign Up</h1>
 
-        <div className="mb-3">
-            <label className="form-label" htmlFor="first_name">First Name:</label>
-            <input type={"text"} className="form-control" placeholder="First Name" required/>
+        <div className="row mb-3">
 
-            <label className="form-label" htmlFor="last_name">Last Name:</label>
-            <input type={"text"} className="form-control" placeholder="Last Name" required/>
+            <div className="col-md-6">
+                <label className="form-label" htmlFor="first_name">First Name:</label>
+                <input type={"text"} className="form-control" placeholder="First Name" required/>
+            </div>
+                
+            <div className="col-md-6">
+                <label className="form-label" htmlFor="last_name">Last Name:</label>
+                <input type={"text"} className="form-control" placeholder="Last Name" required/>
+            </div>
+            
         </div>
 
     <div className="mb-3">
@@ -23,6 +29,11 @@ export default function SignUp() {
     <div className="mb-3">
         <label className="form-label" htmlFor="password">Password:</label>
         <input type={"password"} className="form-control" placeholder="Password" required/> 
+    </div>
+
+    <div className="mb-3">
+        <label className="form-label" htmlFor="repeat-password">Password:</label>
+        <input type={"password"} className="form-control" placeholder="Repeat Password" required/> 
     </div>
 
     <div class="form-check mb-3">

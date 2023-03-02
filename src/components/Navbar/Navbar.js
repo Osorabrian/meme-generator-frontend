@@ -15,6 +15,12 @@ export default function NavBar(){
                     <li className="nav-item me-3">
                         <a className="nav-link text-light" href="#">Add</a>
                     </li>
+                    <li className="nav-item me-3">
+                        <a className="nav-link text-light" href="#">Sign Up</a>
+                    </li>
+                    <li className="nav-item me-3">
+                        <a className="nav-link text-light" href="#">Log out</a>
+                    </li>
                 </ul>
             </div>
         </nav>

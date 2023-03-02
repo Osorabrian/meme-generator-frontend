@@ -3,7 +3,7 @@ import './login.css'
 
 export default function LogIn() {
     return(
-        <form id="log_in">
+        <form id="log_in" className="rounded">
             <h1 style={{textAlign: "center"}} className="text-primary">Log In</h1>
             <div className="mb-3">
             <label className="form-label" htmlFor="email">Email:</label>

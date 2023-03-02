@@ -1,14 +1,14 @@
 import './App.css';
 import NavBar from '../Navbar/Navbar';
 import LandingPage from '../Landingpage/Landingpage';
-import SignUp from '../Signup/Signup';
+import SignUpPage from '../Signuppage/signuppage';
 
 function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
-      <LandingPage></LandingPage>
-      {/* <SignUp></SignUp> */}
+      {/* <LandingPage></LandingPage> */}
+      <SignUpPage></SignUpPage>
     </div>
   );
 }
