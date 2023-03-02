@@ -5,7 +5,7 @@ export default function SignUp() {
     return (
     <form id="sign_up">
 
-    <h1 style={{textAlign: "center"}}>Sign Up</h1>
+    <h1 style={{textAlign: "center"}} className="text-primary">Sign Up</h1>
 
         <div className="mb-3">
             <label className="form-label" htmlFor="first_name">First Name:</label>
@@ -25,11 +25,16 @@ export default function SignUp() {
         <input type={"password"} className="form-control" placeholder="Password" required/> 
     </div>
 
-    <div className="form-text mb-3">
-        <a href="#">Forgot Password ?</a>
+    <div class="form-check mb-3">
+        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+        <label className="form-check-label" htmlFor="flexCheckDefault">
+            I agree to the terms & conditions
+        </label>
     </div>
 
-    <button type="submit" className="btn btn-primary">Log In</button>
+     <div className="text-center">
+            <button type="submit" className="btn btn-primary w-50">Register</button>
+    </div>
     
 </form>
     )
