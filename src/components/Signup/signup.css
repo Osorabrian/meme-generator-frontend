@@ -1,0 +1,9 @@
+#sign_up{
+    text-align: left;
+    width: 40%;
+    background-color: grey;
+    padding: 10px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
