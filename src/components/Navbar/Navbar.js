@@ -14,7 +14,7 @@ export default function NavBar(){
                         <Link className="nav-link text-light" to="#">My Memes</Link>
                     </li>
                     <li className="nav-item me-3">
-                        <Link className="nav-link text-light" to="#">Add</Link>
+                        <Link className="nav-link text-light" to="/add">Add</Link>
                     </li>
                     <li className="nav-item me-3">
                         <Link className="nav-link text-light" to="/signup">Sign Up</Link>
