@@ -16,6 +16,9 @@ export default function LogIn() {
             <div className="form-text mb-3">
                 <a href="#">Forgot Password ?</a>
             </div>
+            <div className="form-text mb-3">
+               <p>Don't have an account ?<a href="#"> Create an account</a></p> 
+            </div>
             <div className="text-center">
                 <button type="submit" className="btn btn-primary w-50">Log In</button>
             </div>
