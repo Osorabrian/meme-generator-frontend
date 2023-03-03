@@ -36,7 +36,7 @@ export default function SignUp() {
         <input type={"password"} className="form-control" placeholder="Repeat Password" required/> 
     </div>
 
-    <div class="form-check mb-3">
+    <div className="form-check mb-3">
         <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
         <label className="form-check-label" htmlFor="flexCheckDefault">
             I agree to the terms & conditions

@@ -9,7 +9,7 @@ export default function HomePage(){
         fetch("http://localhost:9292/memes")
         .then(response => response.json())
         .then(data => setMemes(data))
-    })
+    },[])
 
     return(
         <>
@@ -19,7 +19,7 @@ export default function HomePage(){
             {memes.map((meme) => {
         return (
             <CardComponent
-            key={meme.div} 
+            key={meme.id} 
             title={meme.title} 
             image_url={meme.image_url} 
             description={meme.description}
