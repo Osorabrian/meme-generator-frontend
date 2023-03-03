@@ -13,15 +13,15 @@ export default function AddMeme(){
                     </div>
 
                     <div className="mb-3">
-                        <label className="form-label" htmlFor="description">Description:</label>
-                        <input className="form-control" type={"text"} placeholder="Enter Meme Description"/>
-                    </div>
-
-                    <div className="mb-3">
                         <label className="form-label" htmlFor="meme_url">Meme URL:</label>
                         <input className="form-control" type={"text"} placeholder="Enter Meme URL"/>
                     </div>
-                    
+
+                    <div className="mb-3">
+                        <label className="form-label" htmlFor="description">Description:</label>
+                        <textarea className="form-control" rows={3} placeholder="Enter Meme Description"/>
+                    </div>
+
                     <button className="btn btn-primary" type="submit">Add Meme</button>
                 </form>
              </div>
