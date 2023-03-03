@@ -1,26 +1,26 @@
 import React from "react"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 export default function NavBar(){
     return(
         <nav className = "navbar bg-primary">
             <div className="container-fluid">
-                <Link className="navbar-brand text-light me-5" to="#">Meme Generator</Link>
+                <NavLink className="navbar-brand text-light me-5" to="#">Meme Generator</NavLink>
                 <ul className="nav me-auto">
                     <li className="nav-item me-3">
-                        <Link className="nav-link text-light" to="/home">Home</Link>
+                        <NavLink className="nav-link text-light" to="/home">Home</NavLink>
                     </li>
                     <li className="nav-item me-3">
-                        <Link className="nav-link text-light" to="#">My Memes</Link>
+                        <NavLink className="nav-link text-light" to="/mymemes">My Memes</NavLink>
                     </li>
                     <li className="nav-item me-3">
-                        <Link className="nav-link text-light" to="/add">Add</Link>
+                        <NavLink className="nav-link text-light" to="/add">Add</NavLink>
                     </li>
                     <li className="nav-item me-3">
-                        <Link className="nav-link text-light" to="/signup">Sign Up</Link>
+                        <NavLink className="nav-link text-light" to="/signup">Sign Up</NavLink>
                     </li>
                     <li className="nav-item me-3">
-                        <Link className="nav-link text-light" to="/">Log out</Link>
+                        <NavLink className="nav-link text-light" to="/">Log out</NavLink>
                     </li>
                 </ul>
             </div>
