@@ -5,6 +5,7 @@ import LandingPage from '../Landingpage/Landingpage';
 import SignUpPage from '../Signuppage/signuppage';
 import HomePage from '../Home/homepage';
 import AddMeme from '../Addmeme/add';
+import UpdateMeme from '../Updatememe/Updatememe';
 import MyMemes from '../Mymemes/Mymeme';
 import { createContext, useState } from 'react';
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="signup" element={<SignUpPage/>}></Route>
         <Route path="home" element={<HomePage/>}></Route>
         <Route path="mymemes" element={<MyMemes/>}></Route>
+        <Route path="mymemes/:memeId" element={<UpdateMeme/>}></Route>
         <Route path="add" element={<AddMeme/>}></Route>
       </Routes>
     </userIdContext.Provider> 
