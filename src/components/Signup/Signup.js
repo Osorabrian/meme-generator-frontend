@@ -31,11 +31,11 @@ let navigate = useNavigate()
                body: JSON.stringify(data)
           })
          .then(response => response.json())
-
-        
         }else{
-        alert("bad")
+            alert("your passwords do not match")
         }
+
+        e.reset()
     }
 
 

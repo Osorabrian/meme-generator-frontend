@@ -1,5 +1,6 @@
-import React, {useState} from "react"
+import React, {useContext, useState} from "react"
 import { useNavigate } from "react-router-dom"
+import { userIdContext } from "../App/App"
 import './login.css'
 
 export default function LogIn() { 
@@ -8,6 +9,7 @@ const navigate = useNavigate()
 
 const [email, setEmail] = useState('')
 const [password, setPassword] = useState('')
+const[userId, setUserId] = useContext(userIdContext)
 
 function handleSubmit(e){
     e.preventDefault()
@@ -17,6 +19,7 @@ function handleSubmit(e){
     .then(data => {
         if(data.password === password){
             navigate('/home')
+            setUserId(data.id)
         }else{
             alert("Please enter the right password")
         }
