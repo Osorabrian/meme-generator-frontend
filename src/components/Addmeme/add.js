@@ -1,6 +1,7 @@
 import React,{useState, useContext} from "react";
 import { userIdContext } from "../App/App";
 import './add.css'
+import { useNavigate } from "react-router-dom";
 
 export default function AddMeme(){
 
@@ -8,6 +9,8 @@ export default function AddMeme(){
     const[title, setTitle] = useState('')
     const[imageURL, setImageUrl] = useState('')
     const[description, setDescription] =useState('')
+
+    const navigate = useNavigate()
 
     function handleSubmit(e){
         e.preventDefault()
@@ -26,6 +29,7 @@ export default function AddMeme(){
         .then(data => console.log(data))
 
         alert("Meme has been added successfully")
+        navigate('/mymemes')
     }
 
     return(

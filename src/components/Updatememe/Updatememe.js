@@ -31,7 +31,7 @@ export default function UpdateMeme(){
         })
         .then(response => response.json())
         .then(data => console.log(data))
-        navigate('')
+        navigate('/mymemes')
     }
 
     return(
