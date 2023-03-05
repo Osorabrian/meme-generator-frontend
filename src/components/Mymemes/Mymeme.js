@@ -9,7 +9,7 @@ export default function MyMemes(){
     const[memes, setMemes] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:9292/mymemes/${userId}`)
+        fetch(`https://memes-generator-api.onrender.com/mymemes/${userId}`)
         .then(response => response.json())
         .then(data => setMemes(data))
     },[memes])

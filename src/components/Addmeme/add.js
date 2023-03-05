@@ -14,7 +14,7 @@ export default function AddMeme(){
 
         let formData = {title: title, image_url: imageURL, description: description, user_id: userId}
         
-        fetch("http://localhost:9292/memes/create",{
+        fetch("https://memes-generator-api.onrender.com/memes/create",{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

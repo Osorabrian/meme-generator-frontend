@@ -7,7 +7,7 @@ export default function HomePage(){
     const[query, setQuery] = useState('')
 
     useEffect(() => {
-        fetch("http://localhost:9292/memes")
+        fetch("https://memes-generator-api.onrender.com/memes")
         .then(response => response.json())
         .then(data => setMemes(data))
     },[])

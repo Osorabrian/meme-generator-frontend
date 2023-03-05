@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function MyMemeCard({image_url, title, description, id}){
 
     function handleDelete(){
-        fetch(`http://localhost:9292/memes/delete/${id}`,{
+        fetch(`https://memes-generator-api.onrender.com/memes/delete/${id}`,{
             method: 'DELETE'
         })
         .then(response => response.json())

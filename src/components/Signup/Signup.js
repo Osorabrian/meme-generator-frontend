@@ -22,7 +22,7 @@ let navigate = useNavigate()
 
             navigate('/home')
 
-           fetch("http://localhost:9292/user/create", {
+           fetch("https://memes-generator-api.onrender.com/user/create", {
               method: "POST",
               headers: {
             "Content-Type" : "application/json",

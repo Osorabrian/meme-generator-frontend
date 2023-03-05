@@ -21,7 +21,7 @@ export default function UpdateMeme(){
         
         let formData = {title: title, image_url: imageUrl, description: description}
         
-        fetch(`http://localhost:9292/memes/update/${memeId}`, {
+        fetch(`https://memes-generator-api.onrender.com/memes/update/${memeId}`, {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json',

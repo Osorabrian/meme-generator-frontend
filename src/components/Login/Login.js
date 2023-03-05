@@ -19,7 +19,7 @@ const redirectPath = location.state?.path || '/'
 function handleSubmit(e){
     e.preventDefault()
 
-    fetch(`http://localhost:9292/user/${email}`)
+    fetch(`https://memes-generator-api.onrender.com/user/${email}`)
     .then(response => response.json())
     .then(data => {
         if(data.password === password){
