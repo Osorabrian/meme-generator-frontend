@@ -1,15 +1,20 @@
 import React, {useContext, useState} from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link, useLocation } from "react-router-dom"
 import { userIdContext } from "../App/App"
+import { useAuth } from "../auth"
 import './login.css'
 
 export default function LogIn() { 
 
 const navigate = useNavigate()
 
+const location = useLocation()
+const auth = useAuth()
 const [email, setEmail] = useState('')
 const [password, setPassword] = useState('')
 const[userId, setUserId] = useContext(userIdContext)
+
+const redirectPath = location.state?.path || '/'
 
 function handleSubmit(e){
     e.preventDefault()
@@ -18,8 +23,9 @@ function handleSubmit(e){
     .then(response => response.json())
     .then(data => {
         if(data.password === password){
-            navigate('/home')
+            navigate(redirectPath, {replace: true})
             setUserId(data.id)
+            auth.login(data.id)
         }else{
             alert("Please enter the right password")
         }
@@ -45,7 +51,7 @@ function handleSubmit(e){
             </div>
 
             <div className="form-text mb-3">
-               <p>Don't have an account ?<a href="#"> Create an account</a></p> 
+               <p>Don't have an account ?<Link to='/signup'> Create an account</Link></p> 
             </div>
 
             <div className="text-center">

@@ -13,8 +13,8 @@ export default function HomePage(){
 
     return(
         <>
-        <h2 className="mt-3 text-primary" style={{textAlign: "left"}}>All Memes</h2>
-        <hr/>
+        <h2 className="mt-3 text-primary">All Memes</h2>
+        <h4 style={{textAlign: "left"}}>Search Results({memes.length})</h4>
         <div className="row">
             {memes.map((meme) => {
         return (

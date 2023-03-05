@@ -1,7 +1,15 @@
 import React from "react"
 import {NavLink} from "react-router-dom"
+import { useAuth } from "../auth"
 
 export default function NavBar(){
+
+    const auth = useAuth()
+
+    function handleClick(){
+        auth.logout()
+    }
+
     return(
         <nav className = "navbar bg-primary">
             <div className="container-fluid">
@@ -16,12 +24,20 @@ export default function NavBar(){
                     <li className="nav-item me-3">
                         <NavLink className="nav-link text-light" to="/add">Add</NavLink>
                     </li>
-                    <li className="nav-item me-3">
+                    {
+                        !auth.user && (
+                        <li className="nav-item me-3">
                         <NavLink className="nav-link text-light" to="/signup">Sign Up</NavLink>
+                        </li> 
+                        )
+                    }
+                    {
+                        auth.user && (
+                            <li className="nav-item me-3">
+                        <NavLink className="nav-link text-light" to="/" onClick={handleClick} >Log out</NavLink>
                     </li>
-                    <li className="nav-item me-3">
-                        <NavLink className="nav-link text-light" to="/">Log out</NavLink>
-                    </li>
+                        )
+                    }
                 </ul>
             </div>
         </nav>

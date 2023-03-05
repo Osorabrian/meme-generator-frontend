@@ -8,6 +8,8 @@ import AddMeme from '../Addmeme/add';
 import UpdateMeme from '../Updatememe/Updatememe';
 import MyMemes from '../Mymemes/Mymeme';
 import { createContext, useState } from 'react';
+import AuthProvider from '../auth';
+import RequireAuth from '../Requireauth';
 
 export const userIdContext = createContext()
 
@@ -17,18 +19,20 @@ function App() {
 
   return (
     <div className="App">
-    <userIdContext.Provider value={[userId, setUserId]}>
-      <NavBar></NavBar>
-
-      <Routes>
-        <Route path="/" element={<LandingPage/>}></Route>
-        <Route path="signup" element={<SignUpPage/>}></Route>
-        <Route path="home" element={<HomePage/>}></Route>
-        <Route path="mymemes" element={<MyMemes/>}></Route>
-        <Route path="mymemes/:memeId" element={<UpdateMeme/>}></Route>
-        <Route path="add" element={<AddMeme/>}></Route>
-      </Routes>
-    </userIdContext.Provider> 
+     <AuthProvider>
+      <userIdContext.Provider value={[userId, setUserId]}>
+        <NavBar></NavBar>
+        <Routes>
+          <Route path="/" element={<LandingPage/>}></Route>
+          <Route path="signup" element={<SignUpPage/>}></Route>
+          <Route path="home" element={<RequireAuth><HomePage/></RequireAuth>}></Route>
+          <Route path="mymemes" element={<RequireAuth><MyMemes/></RequireAuth>}></Route>
+          <Route path="mymemes/:memeId" element={<UpdateMeme/>}></Route>
+          <Route path="add" element={<RequireAuth><AddMeme/></RequireAuth>}></Route>
+        </Routes>
+      </userIdContext.Provider>
+      </AuthProvider> 
+       
     </div>
   );
 }
