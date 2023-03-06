@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Meme Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Author
+Brian Osora 5th March 2023
 
-## Available Scripts
+## Description
+This is a web app that allows users to generate memes, view and update memes.  
+The user logs in or creates an account and can view all memes on the home page,   view his memes on mymemes age, where he can also delete and update the memes.   There is also an add meme page where the user can create a meme.
 
-In the project directory, you can run:
 
-### `npm start`
+## livelink
+https://meme-generator-frontend-nu.vercel.app/ 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshot
+### Landing Page
+![image](https://user-images.githubusercontent.com/83941341/223017715-4e947686-8fd9-420b-a10a-121105ff82ed.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Sign Up page
+![image](https://user-images.githubusercontent.com/83941341/223017830-ded08ba4-7df6-4b7d-9a4f-f9382ffdb578.png)
 
-### `npm test`
+### Home Page
+![image](https://user-images.githubusercontent.com/83941341/223018008-540ab34a-7cf2-41da-9f5e-4c4f10fdd1e6.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### My memes page
+![image](https://user-images.githubusercontent.com/83941341/223018096-5d2182cb-5f1d-4598-bfaf-f8d09224368f.png)
 
-### `npm run build`
+### Add memes page
+![image](https://user-images.githubusercontent.com/83941341/223018196-b300e0fc-6b12-4391-9240-da98f4cdb105.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Update memes page
+![image](https://user-images.githubusercontent.com/83941341/223018288-32bae9cc-9dd5-4218-830b-a658e7f138b1.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Set Up Instructions
+### Requirements
+Language: HTML, CSS, JS, REACT   
+Text Editor: VS Code
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Files
+- Fork the repo
+- Clone the repo to your local machine
+- open your terminal navigate to the repository and run ```npm install``` to install the dependencies.
+- After that run ```npm start``` to start the React app.
+- You can now use the app and can make changes and see how it works out.
+  
+## Technologies Used
+- HTML
+- React
+- CSS 
+- JS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact Information
+Eamil: osorabrian@gmail.com
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ISC License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Copyright 2022 Osorabrian
 
-## Learn More
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
