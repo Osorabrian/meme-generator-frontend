@@ -34,8 +34,6 @@ let navigate = useNavigate()
         }else{
             alert("your passwords do not match")
         }
-
-        e.reset()
     }
 
 
