@@ -7,6 +7,16 @@ Brian Osora 5th March 2023
 This is a web app that allows users to generate memes, view and update memes.  
 The user logs in or creates an account and can view all memes on the home page,   view his memes on mymemes age, where he can also delete and update the memes.   There is also an add meme page where the user can create a meme.
 
+## How to use the app
+
+To log in
+
+- use sample email osorabrian@gmail.com
+- Password Brian123
+
+To create an account
+- naviagate to signup fill up the sign up form
+- you will be directed to log in page where you will input the details  you signed up with to log in.
 
 ## livelink
 Link to web app (frontend)
